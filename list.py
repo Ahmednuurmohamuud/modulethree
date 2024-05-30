@@ -15,9 +15,10 @@ print(add[0:3])
 
 
 for  number in add:
-     if number %2 == 0:
+     if number %2 != 0 or number > 9:
          add.remove(number)
 
 
 print(add)
+
 
