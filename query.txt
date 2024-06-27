@@ -1,0 +1,6 @@
+create table s_date(studentID int,age int, gender int,Ethnicity int,ParentalEducation int,StudyTimeWeekly varchar(250),Absences int,Tutoring int,ParentalSupport int,Extracurricular varchar(250),Sports varchar(250),Music varchar(250), Volunteering varchar(250),GPA varchar(250),GradeClass varchar(250));
+ INSERT INTO s_date(1001,17,1,0,2,"19.83372",7,1,2,"0","0","1","0","2.929196","2");
+CREATE VIEW view5 as select studentID,age, gender, GPA from s_date where gender=1;
+ CREATE VIEW view4 as select studentID,age, Gender, GPA from s_date where GPA > 3
+ CREATE VIEW view2 as select studentID, age, Ethnicity, StudyTimeWeekly,GPA from s_date;
+ describe s_date;
